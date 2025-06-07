@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center; 
+}
+
+.navbar h1{
+    margin-left: 20px;
+    
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1px;
+    margin-right: 20px;
+    align-items: stretch;
+    height: 100%; /* ให้ ul เต็มความสูงของ navbar */
+}
+
+.navbar li {
+    padding: 20px 32px; /* เพิ่ม padding ให้สูงขึ้น */
+    border-radius: 0; /* เอา border-radius ออก */
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul li:hover {
+    background-color: #e9ecef;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.profile {
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    overflow: hidden; /* ป้องกันภาพล้น */
+}
+
+.Profile-Picture {
+    width: 35%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 2%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 24px 0 rgba(0, 180, 255, 0.3); /* เงาสีฟ้า */
+    animation: floating 2.5s ease-in-out infinite alternate;
+    
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+        box-shadow:
+            0 4px 20px 0 rgba(0,180,255,0.3),
+            0 0 0 4px rgba(139, 98, 98, 0.2);
+    }
+    50% {
+        transform: translateY(0px);
+        box-shadow:
+            0 12px 20px 0 rgba(0,120,255,0.4),
+            0 0 0 4px rgba(91, 226, 78, 0.15);
+    }
+    100% {
+        transform: translateY(0px) ;
+        box-shadow:
+            0 20px 20px 0 rgba(0,80,255,0.5),
+            0 0 0 4px rgba(212, 191, 115, 0.12);
+    }
+}

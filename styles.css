@@ -22,15 +22,15 @@
     gap: 1px;
     margin-right: 20px;
     align-items: stretch;
-    height: 100%; /* ให้ ul เต็มความสูงของ navbar */
+   
 }
 
 .navbar li {
-    padding: 20px 32px; /* เพิ่ม padding ให้สูงขึ้น */
-    border-radius: 0; /* เอา border-radius ออก */
+
     display: flex;
     align-items: center;
     height: 100%;
+    
 }
 
 .navbar ul li:hover {
@@ -38,12 +38,15 @@
 }
 
 .navbar a {
+    padding: 20px 32px; /* เพิ่ม padding ให้สูงขึ้น */
     text-decoration: none;
     color: black;
     font-weight: bold;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100%;
+    width: 100%; /* ให้ลิงก์เต็มความสูงของ li */
 }
 
 .profile {

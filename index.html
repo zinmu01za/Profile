@@ -8,9 +8,12 @@
     <title>Mujahid Sar </title>
 </head>
 <body>
+   <!-- ส่วนหัวของเว็บไซต์ (Header) -->
    <header>
     <nav class="navbar">
+        <!-- ชื่อโปรไฟล์ -->
         <h1>Mujahid Sar</h1>
+        <!-- เมนูนำทาง (Navigation Menu) -->
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#1">Hobby</a></li>
@@ -19,22 +22,114 @@
     </nav>
    </header>
 
-   <section>
-        <div class="profile">
-            <img src="Mr.JPG" alt="Mujahid Sar's Profile Picture" class="Profile-Picture" type="image/jpeg">
+   <!-- ส่วนเนื้อหาหลัก (Main Section) -->
+   <section class="first-section">
+    <div class="profile">
+        <!-- รูปโปรไฟล์ -->
+        <img src="Mr.JPG" alt="Mujahid Sar's Profile Picture" class="Profile-Picture" type="image/jpeg">
+        <!-- กล่องรวมเนื้อหาโปรไฟล์ -->
+        <div>
+            <!-- ข้อมูลส่วนตัว -->
             <div>
-                <h2>About Me</h2>
-                <p>My name is Mujahid Sar, and I am a student at the University of Engineering and Technology (UET) Peshawar.</p>
-                <p>I am currently pursuing a degree in Computer Science.</p>
-                <p>My hobbies include reading books, playing cricket, and exploring new technologies.</p>
+                <h1 class="topic1">About me!</h1>
+                <p>
+                    Hi, my name is mujahid sar, and I am a junior developer. i was graduate at prince of songkla university pattani campus in 2023.
+                    I am currently looking for company that will give me a first experience job on web developer side. on my internship i got order to do a small webapp for collect employee data with ReactJS (front end) & NodeJS (back end).
+                    and MySQL server. It's just a CRUD simple. for now i want to improve my skill in web development and learn more about the latest technologies. My goal is to become a full-stack developer and work on exciting projects that make a difference.
+                </p>
+            </div>
+            <!-- ประวัติการศึกษา -->
+            <div>
+                <h1 class="topic2">Education!</h1>
+                <p>
+                    (2020 - 2023) Prince Of Songkla University Pattani Campus.<br/>
+                    (2018 - 2020) Pattani Technical College.<br/>
+                    (2013 - 2018) Dechapattanayanukul School.
+                </p>
+            </div>
+            <!-- ทักษะ (Skills) -->
+            <div>
+                <h1 class="topic3">Skills!</h1>
+                <div class="logoskills">
+                    <!-- โลโก้ HTML -->
+                    <div class="logo-card">
+                        <div class="logo-card-inner">
+                            <div class="logo-card-front">
+                                <img src="html.png" alt="HTML Logo" class="logo-img" id="html-logo">
+                            </div>
+                            <div class="logo-card-back">
+                                <span class="junior-text">Junior</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- โลโก้ CSS -->
+                    <div class="logo-card">
+                        <div class="logo-card-inner">
+                            <div class="logo-card-front">
+                                <img src="css.webp" alt="CSS Logo" class="logo-img" id="css-logo">
+                            </div>
+                            <div class="logo-card-back" id="css-back">
+                                <span class="junior-text" id="css-lg">Junior</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- โลโก้ JavaScript -->
+                    <div class="logo-card">
+                        <div class="logo-card-inner">
+                            <div class="logo-card-front">
+                                <img src="js.png" alt="JavaScript Logo" class="logo-img" id="js-logo">
+                            </div>
+                            <div class="logo-card-back" id="js-back">
+                                <span class="junior-text" id="js-lg">Junior</span>
+                            </div>
+                        </div>
+                    </div>    
+                    <!-- .break สำหรับขึ้นบรรทัดใหม่ -->
+                    <div class="break"></div>
+                    <!-- โลโก้ React -->
+                    <div class="logo-card">
+                        <div class="logo-card-inner">
+                            <div class="logo-card-front">
+                                <img src="React.webp" alt="React Logo" class="logo-img" id="react-logo">
+                            </div>
+                            <div class="logo-card-back" id="react-back">
+                                <span class="junior-text" id="react-lg">Junior</span>
+                            </div>
+                        </div>
+                    </div>    
+                    <!-- โลโก้ Node.js -->
+                    <div class="logo-card">
+                        <div class="logo-card-inner">
+                            <div class="logo-card-front">
+                                <img src="nodejs.png" alt="Node.js Logo" class="logo-img" id="nodejs-logo">
+                            </div>
+                            <div class="logo-card-back" id="nodejs-back">
+                                <span class="junior-text" id="nodejs-lg">Junior</span>
+                            </div>
+                        </div>
+                    </div>   
+                    <!-- โลโก้ MySQL -->
+                    <div class="logo-card">
+                        <div class="logo-card-inner">
+                            <div class="logo-card-front">
+                                <img src="mysql.png" alt="MySQL Logo" class="logo-img" id="mysql-logo">
+                            </div>
+                            <div class="logo-card-back" id="mysql-back">
+                                <span class="junior-text" id="mysql-lg">Junior</span>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
             </div>
         </div>
-   </section>
+    </div>
+</section>
    
+   <!-- ส่วนท้ายของเว็บไซต์ (Footer) -->
    <footer>
-    
-   </footer>
-
+</footer>
 
 </body>
+   
+
 </html>

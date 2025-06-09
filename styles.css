@@ -12,6 +12,29 @@
     background-color: #f8f9fa;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     align-items: center; 
+    position: fixed;    /* ให้ลอยอยู่ด้านบน */
+    top: 0;             /* ชิดขอบบน */
+    left: 0;
+    width: 100%;        /* กว้างเต็มจอ */
+    z-index: 1000;      /* อยู่เหนือเนื้อหาอื่น */
+}
+
+.first-section {
+    padding-top: 50px; /* ปรับตามความสูง navbar */
+    background: rgba(255,0,0,0.1);
+    min-height: 100vh;
+}
+
+.second-section {
+    padding-top: 70px; /* ปรับตามความสูง navbar */
+    background: rgba(0,0,255,0.1);
+    min-height: 100vh;
+}
+
+.third-section {
+    padding-top: 70px; /* ปรับตามความสูง navbar */
+    background: rgba(0,255,0,0.1);
+    min-height: 100vh;
 }
 
 /* ขยับชื่อโปรไฟล์ใน Navbar */
@@ -60,6 +83,7 @@
     display: flex;
     gap: 40px;
     overflow: hidden; /* ป้องกันภาพล้น */
+    
 }
 
 /* รูปโปรไฟล์ */
@@ -135,6 +159,34 @@
     margin-bottom: 20px;
 }
 
+/* หัวข้อ Experience */
+.topic4{
+    font-size: 24px;
+    background-color: rgb(3, 91, 255);
+    width: 130px;
+    max-width: 100%;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.topic5{
+    font-size: 24px;
+    background-color: rgba(183, 0, 255, 0.938);
+    width: 120px;
+    max-width: 100%;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+
 /* ===================== Profile Content Box ===================== */
 /* กล่องเนื้อหาโปรไฟล์ */
 .profile > div {
@@ -192,6 +244,7 @@
         width: 45%;      /* ให้แต่ละอันกว้างประมาณครึ่ง */
         margin: 0 0 16px 0;
     }
+
 }
 
 /* ===================== Skills Logo ===================== */
@@ -277,6 +330,7 @@
 #css-logo {
     box-shadow: 0 4px 24px 0 rgba(0, 81, 255, 0.747);
     transition: transform 0.3s ease;
+
 }
 #css-back{
     box-shadow: 0 4px 24px 0 rgba(0, 81, 255, 0.747);
@@ -332,3 +386,19 @@
 #mysql-lg{
     color: rgba(255, 166, 0, 0.897);
 }
+
+.tools{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(214, 131, 131, 0.884);
+    border-radius: 10px;
+    width: 500px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-top: 80px;
+    padding: 4px;
+    
+}
+
+
+

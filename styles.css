@@ -21,13 +21,12 @@
 
 .first-section {
     padding-top: 50px; /* ปรับตามความสูง navbar */
-    background: rgba(255,0,0,0.1);
     min-height: 100vh;
 }
 
 .second-section {
     padding-top: 70px; /* ปรับตามความสูง navbar */
-    background: rgba(0,0,255,0.1);
+   
     min-height: 100vh;
 }
 
@@ -79,7 +78,7 @@
 /* ===================== Profile Section ===================== */
 /* กล่องโปรไฟล์หลัก */
 .profile {
-    padding: 20px;
+   margin: 20px;
     display: flex;
     gap: 40px;
     overflow: hidden; /* ป้องกันภาพล้น */
@@ -124,8 +123,7 @@
     width: 120px;
     max-width: 100%;
     padding: 2px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     border-radius: 10px;
     color: white;
     margin-bottom: 10px;
@@ -138,8 +136,7 @@
     width: 120px;
     max-width: 100%;
     padding: 2px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     border-radius: 10px;
     color: white;
     margin-bottom: 10px;
@@ -152,8 +149,7 @@
     width: 120px;
     max-width: 100%;
     padding: 2px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     border-radius: 10px;
     color: white;
     margin-bottom: 20px;
@@ -166,8 +162,7 @@
     width: 130px;
     max-width: 100%;
     padding: 2px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     border-radius: 10px;
     color: white;
     margin-bottom: 20px;
@@ -180,8 +175,7 @@
     width: 120px;
     max-width: 100%;
     padding: 2px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     border-radius: 10px;
     color: white;
     margin-bottom: 10px;
@@ -394,11 +388,211 @@
     border-radius: 10px;
     width: 500px;
     max-width: 100%;
-    margin-left: auto;
-    margin-top: 80px;
+    margin-top: 75px;
     padding: 4px;
     
 }
 
+.hobby{
+   margin: 10px;
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+}
 
+.topic6{
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    width:50%;
+    max-width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    height: 40px;
+    padding-top: 10px;
+    
+}
 
+.my-hobby{
+    position: relative;
+    width: 80vw;      /* ปรับขนาดตามต้องการ */
+    max-width: 100%;
+    height:40vw;
+    max-height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobby-slide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    max-width: 100%;
+    height: 60%;
+    object-fit: cover;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.7);
+    transition: 
+        opacity 0.5s,
+        transform 0.5s,
+        filter 0.5s;
+    filter: blur(2px) grayscale(60%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hobby-slide.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    filter: none;
+    z-index: 3;
+}
+
+.hobby-slide.prev,
+.hobby-slide.next {
+    opacity: 0.7;
+    transform: translate(-120%, -50%) scale(0.8);
+    filter: blur(1px) grayscale(30%);
+    z-index: 2;
+}
+.hobby-slide.next {
+    transform: translate(20%, -50%) scale(0.8);
+}
+
+.caption {
+    margin-top: 10px;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.hobby-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    @media (max-width: 700px) {
+    .my-hobby {
+        flex-direction: column;
+        align-items: center;
+        height: auto !important;
+        max-height: none !important;
+        width: 100vw;
+        min-height: unset;
+        position: relative;
+        overflow: visible !important;
+    }
+    .hobby-slide,
+    .hobby-slide.active,
+    .hobby-slide.prev,
+    .hobby-slide.next {
+        position: static !important;
+        width: 90vw !important;
+        height: auto !important;
+        margin-bottom: 24px !important;
+        opacity: 1 !important;
+        transform: none !important;
+        filter: none !important;
+        z-index: 1 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .hobby-slide img {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 10px !important;
+    }
+}
+    .topic6 {
+        font-size: 32px;
+        height: auto;
+        padding-top: 8px;
+        margin-bottom: 16px;
+        width: 90vw;
+        max-width: 100%;
+    }
+    .tools {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.slide-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    gap: 10px;
+}
+.slide-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #bbb;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: none;
+}
+.slide-dot.active {
+    background: #e96c00;
+}
+
+@media (max-width: 900px) {
+    .my-hobby {
+        width: 98vw;
+        max-width: 98vw;
+        height: 280px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hobby-slide {
+        width: 80vw;
+        max-width: 420px;
+        height: 180px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .hobby-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .topic6 {
+        font-size: 40px;
+        width: 98vw;
+        margin: 24px auto 16px auto;
+        text-align: center;
+    }
+}
+
+.footer-contact {
+    text-align: center;
+    padding: 16px 0;
+    color: #333;
+    background: #f5f5f5;
+    font-size: 1rem;
+}
+.footer-contact a {
+    color: #0078d4;
+    text-decoration: none;
+}
+.footer-contact a:hover {
+    text-decoration: underline;
+}

@@ -6,6 +6,7 @@
     <meta name="description" content="Mujahid's Profile Page">
     <link rel="stylesheet" href="styles.css">
     <title>Mujahid Sar </title>
+    <script src="script.js"></script>
 </head>
 <body>
    <!-- ส่วนหัวของเว็บไซต์ (Header) -->
@@ -17,7 +18,7 @@
         <ul>
             <li><a href="#first-section">Home</a></li>
             <li><a href="#second-section">Hobby</a></li>
-            <li><a href="#third-section">Goals</a></li>
+            
         </ul>
     </nav>
    </header>
@@ -26,7 +27,7 @@
    <section class="first-section" id="first-section">
     <div class="profile">
         <!-- รูปโปรไฟล์ -->
-        <img src="Mr.JPG" alt="Mujahid Sar's Profile Picture" class="Profile-Picture" type="image/jpeg">
+        <img src="image/Mr.JPG" alt="Mujahid Sar's Profile Picture" class="Profile-Picture" type="image/jpeg">
         <!-- กล่องรวมเนื้อหาโปรไฟล์ -->
         <div>
             <!-- ข้อมูลส่วนตัว -->
@@ -55,7 +56,7 @@
                     <div class="logo-card">
                         <div class="logo-card-inner">
                             <div class="logo-card-front">
-                                <img src="html.png" alt="HTML Logo" class="logo-img" id="html-logo">
+                                <img src="image/html.png" alt="HTML Logo" class="logo-img" id="html-logo">
                             </div>
                             <div class="logo-card-back">
                                 <span class="junior-text">Junior</span>
@@ -66,7 +67,7 @@
                     <div class="logo-card">
                         <div class="logo-card-inner">
                             <div class="logo-card-front">
-                                <img src="css.webp" alt="CSS Logo" class="logo-img" id="css-logo">
+                                <img src="image/css.webp" alt="CSS Logo" class="logo-img" id="css-logo">
                             </div>
                             <div class="logo-card-back" id="css-back">
                                 <span class="junior-text" id="css-lg">Junior</span>
@@ -77,7 +78,7 @@
                     <div class="logo-card">
                         <div class="logo-card-inner">
                             <div class="logo-card-front">
-                                <img src="js.png" alt="JavaScript Logo" class="logo-img" id="js-logo">
+                                <img src="image/js.png" alt="JavaScript Logo" class="logo-img" id="js-logo">
                             </div>
                             <div class="logo-card-back" id="js-back">
                                 <span class="junior-text" id="js-lg">Junior</span>
@@ -90,7 +91,7 @@
                     <div class="logo-card">
                         <div class="logo-card-inner">
                             <div class="logo-card-front">
-                                <img src="React.webp" alt="React Logo" class="logo-img" id="react-logo">
+                                <img src="image/React.webp" alt="React Logo" class="logo-img" id="react-logo">
                             </div>
                             <div class="logo-card-back" id="react-back">
                                 <span class="junior-text" id="react-lg">Junior</span>
@@ -101,7 +102,7 @@
                     <div class="logo-card">
                         <div class="logo-card-inner">
                             <div class="logo-card-front">
-                                <img src="nodejs.png" alt="Node.js Logo" class="logo-img" id="nodejs-logo">
+                                <img src="image/nodejs.png" alt="Node.js Logo" class="logo-img" id="nodejs-logo">
                             </div>
                             <div class="logo-card-back" id="nodejs-back">
                                 <span class="junior-text" id="nodejs-lg">Junior</span>
@@ -112,7 +113,7 @@
                     <div class="logo-card">
                         <div class="logo-card-inner">
                             <div class="logo-card-front">
-                                <img src="mysql.png" alt="MySQL Logo" class="logo-img" id="mysql-logo">
+                                <img src="image/mysql.png" alt="MySQL Logo" class="logo-img" id="mysql-logo">
                             </div>
                             <div class="logo-card-back" id="mysql-back">
                                 <span class="junior-text" id="mysql-lg">Junior</span>
@@ -142,25 +143,42 @@
 
   <section class="second-section" id="second-section">
     <div class="hobby">
-        <h1 class="topic6">Hobby!</h1>
-        <p>
-            I love to play games, watch movies, and listen to music. I also enjoy reading books and learning new things.
-        </p>
+        <h1 class="topic6">My Hobby</h1>
+           <div class="my-hobby">
+            <div class="hobby-slide">
+            <img src="image/valorant.webp" alt="Hobby 1">
+       <div class="caption">Playing game valorant</div>
+       </div>
+            <div class="hobby-slide">
+    <img src="image/movie.jpg" alt="Hobby 2">
+    <div class="caption">Watching movie</div>
+  </div>
+            <div class="hobby-slide">
+    <img src="image/music.jpg" alt="Hobby 3">
+    <div class="caption">listen music</div>
+  </div>
+  <div class="hobby-slide">
+    <img src="image/code.jpg" alt="Hobby 4">
+    <div class="caption">Practice coding</div>
+  </div>
+            </div>
+            <div class="slide-dots"></div>
     </div>
   </section>
         
-    <section class="third-section" id="third-section">
-        <div class="goals">
-            <h1 class="topic7">Goals!</h1>
-            <p>
-                My goal is to become a full-stack developer and work on exciting projects that make a difference. I want to improve my skills in web development and learn more about the latest technologies.
-            </p>
-        </div>
+
 
 
 
    <!-- ส่วนท้ายของเว็บไซต์ (Footer) -->
-   <footer>
+<footer>
+    <div class="footer-contact">
+        <span>Contact: Mujahid Sar</span> |
+        <a href="mailto:zinmu_01za@hotmail.com">zinmu_01za@hotmail.com</a> |
+        <span>Tel: 064-3375338</span> |
+        <a href="https://www.facebook.com/mujahid.sar.mu/" target="_blank">Facebook</a>
+    </div>
+
 </footer>
 
 </body>
